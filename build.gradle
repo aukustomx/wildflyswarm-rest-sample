@@ -42,3 +42,7 @@ dependencies {
     compile 'org.wildfly.swarm:swagger:' + swarmVersionBeta1
     compile 'org.codehaus.groovy:groovy-all:2.3.11'
 }
+
+task stage {
+    dependsOn build
+}
